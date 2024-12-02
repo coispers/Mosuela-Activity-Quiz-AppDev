@@ -3,7 +3,7 @@
 
 📋 Features
 * Activity 1 - Stateless Widgets
-* Activity 2 and Quiz - CV
+* Activity 2 and Quiz - CV \
      CV Credentials:
   - Username: francoislouisemosuela
   - Password: 12345
