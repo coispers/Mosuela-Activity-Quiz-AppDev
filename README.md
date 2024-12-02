@@ -1,5 +1,5 @@
 # Mosuela Activity Quiz AppDev
-## Welcome to the Mosuela Activity Quiz AppDev repository! This project is designed as an engaging activity and quiz application to aid in development and learning.
+## This is Mosuela's Activities and Quiz Repository for IT-331
 
 📋 Features
 * Activity 1 - Stateless Widgets
