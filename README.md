@@ -1,7 +1,7 @@
 # Mosuela Activity Quiz AppDev
 ## This is Mosuela's Activities and Quiz Repository for IT-331
 
-📋 Features
+📋 Activities and Quizzes
 * Activity 1 - Stateless Widgets
 * Activity 2 and Quiz - CV \
      CV Credentials:
