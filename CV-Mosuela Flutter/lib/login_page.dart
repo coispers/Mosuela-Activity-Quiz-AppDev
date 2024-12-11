@@ -5,6 +5,8 @@ class LoginPage extends StatelessWidget {
   final TextEditingController usernameText = TextEditingController();
   final TextEditingController passwordText = TextEditingController();
 
+  LoginPage({super.key});
+
   void loginButton(BuildContext context) {
     String username = usernameText.text;
     String password = passwordText.text;
@@ -14,7 +16,7 @@ class LoginPage extends StatelessWidget {
       // login is successful, go to main.dart MyCVPage
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => MyCVPage()),
+        MaterialPageRoute(builder: (context) => const MyCVPage()),
       );
     } else if (username == '' || password == '') {
       // if the username and/or password is empty go here
@@ -98,7 +100,6 @@ class LoginPage extends StatelessWidget {
             // login button
             ElevatedButton(
               onPressed: () => loginButton(context),
-              child: Text("Login"),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.blue, // button bg color
                 foregroundColor: Colors.white, // button text color
@@ -108,6 +109,7 @@ class LoginPage extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10.0),
                 ),
               ),
+              child: const Text("Login"),
             ),
           ],
         ),

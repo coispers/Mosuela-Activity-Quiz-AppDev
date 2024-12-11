@@ -1,8 +1,12 @@
 import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import 'education.dart';
+import 'experience.dart';
 import 'login_page.dart';
 import 'profile_picture.dart';
+import 'projects.dart';
+import 'skills.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -11,6 +15,8 @@ void main() {
 }
 
 class MyCVPage extends StatefulWidget {
+  const MyCVPage({super.key});
+
   @override
   MyCVPageState createState() => MyCVPageState();
 }
@@ -63,32 +69,44 @@ class MyCVPageState extends State<MyCVPage> {
                     ),
                   )),
             ),
-            //contents inside the menu
             ListTile(
-                leading: const Icon(Icons.school_rounded),
-                title: const Text('Education'),
-                onTap: () {
-                  //none for now
-                }),
+              leading: const Icon(Icons.school_rounded),
+              title: const Text('Education'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const EducationPage()),
+                );
+              },
+            ),
             ListTile(
               leading: const Icon(Icons.code_rounded),
               title: const Text('Skill'),
               onTap: () {
-                //none for now
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const SkillsPage()),
+                );
               },
             ),
             ListTile(
               leading: const Icon(Icons.create_new_folder_rounded),
               title: const Text('Projects'),
               onTap: () {
-                //none for now
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const ProjectsPage()),
+                );
               },
             ),
             ListTile(
               leading: const Icon(Icons.download_done_rounded),
               title: const Text('Experience'),
               onTap: () {
-                //none for now
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const ExperiencePage()),
+                );
               },
             ),
             ListTile(
@@ -98,7 +116,7 @@ class MyCVPageState extends State<MyCVPage> {
                 Navigator.pushReplacement(context,
                     MaterialPageRoute(builder: (context) => LoginPage()));
               },
-            )
+            ),
           ],
         ),
       ),
